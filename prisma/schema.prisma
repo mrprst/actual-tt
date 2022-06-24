@@ -8,22 +8,22 @@ datasource db {
 }
 
 model User {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  name  String?
+  id          Int         @id @default(autoincrement())
+  email       String
+  name        String?
   candidacies Candidacy[]
 }
 
 model Candidacy {
-  id        Int      @id @default(autoincrement())
-  candidate    User?    @relation(fields: [candidateId], references: [id])
-  candidateId  Int?
-  announce    Announce?    @relation(fields: [announceId], references: [id])
-  announceId  Int?
+  id         Int       @id @default(autoincrement())
+  announceId Int?
+  userId     Int?
+  announce   Announce? @relation(fields: [announceId], references: [id])
+  user       User?     @relation(fields: [userId], references: [id])
 }
 
 model Announce {
-  id        Int      @id @default(autoincrement())
-  title     String
+  id          Int         @id @default(autoincrement())
+  title       String
   candidacies Candidacy[]
 }

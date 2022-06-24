@@ -19,12 +19,12 @@ const Blog: React.FC<Props> = props => {
             </div>
           ))}
         </main>
-        <h2>
-        <a>ACT-TT1 - Echiquier</a>
-        <a>ACT-TT2 - Fibonacci</a>
-        <a>ACT-TT3 - Modélisation</a>
-        <a>ACT-TT4 - Tests Unitaires</a>
-        </h2>
+        <div className='menu'>
+          <h2><a href='/chessboard'>ACT-TT1 - Echiquier</a></h2>
+          <h2><a href='/fibonacci'>ACT-TT2 - Fibonacci</a></h2>
+          <h2><a href='/modelisation'>ACT-TT3 - Modélisation</a></h2>
+          <h2><a href='/tests'>ACT-TT4 - Tests Unitaires</a></h2>
+        </div>
       </div>
       <style jsx>{`
         .post {
@@ -38,6 +38,15 @@ const Blog: React.FC<Props> = props => {
 
         .post + .post {
           margin-top: 2rem;
+        }
+
+        .menu {
+          display: flex;
+          flex-direction: column;
+        }
+
+        a {
+          color: black
         }
       `}</style>
     </Layout>

@@ -1,13 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import prisma from '../../lib/prisma'
 
-// POST /api/user
-// Required fields in body: name, email
 export default async function handle(req: NextApiRequest, res: NextApiResponse) {
-  const result = await prisma.user.create({
-    data: {
-      ...req.body,
-    },
+  const data = req.body;
+  const users = await prisma.user.findMany({
+    where: { id: data.userId },
   })
-  res.json(result)
+  res.json(users)
 }
