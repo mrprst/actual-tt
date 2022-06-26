@@ -1,11 +1,13 @@
-type Props = {
+import React from "react";
+
+export type Props = {
   color: string,
 }
 
 const Square: React.FC<Props> = (props: Props) => {
   return (
     <>
-      <div className={props.color}>
+      <div className={props.color} data-testid="square">
       </div>
       <style jsx>{`
         .white {
