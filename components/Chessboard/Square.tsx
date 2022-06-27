@@ -1,5 +1,4 @@
 import React from "react";
-import Tile from "./Tile";
 
 export type Props = {
   color: string,
@@ -20,7 +19,7 @@ const Square: React.FC<Props> = (props: Props) => {
         .black {
           height: 50px;
           width: 50px;
-          background-color: black;
+          background-color: #3545e5;
           clear: both;
         }
       `}</style>
