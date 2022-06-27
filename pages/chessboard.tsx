@@ -1,11 +1,12 @@
+import React from 'react'
 import Column from '../components/Column';
 import Layout from '../components/Layout'
 
-const chessboard: React.FC = () => {
+const Chessboard: React.FC = () => {
 
   return (
     <Layout>
-      <div className='chessboard'>
+      <div className='chessboard' data-testid="chessboard">
         <Column direction="white-first" />
         <Column direction="black-first" />
         <Column direction="white-first" />
@@ -24,4 +25,4 @@ const chessboard: React.FC = () => {
   )
 }
 
-export default chessboard;
+export default Chessboard;

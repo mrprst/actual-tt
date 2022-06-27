@@ -1,13 +1,14 @@
+import React from 'react';
 import Square from './Square';
 
-type Props = {
+export type Props = {
   direction: string
 }
 
 const Column: React.FC<Props> = (props: Props) => {
   return (
     <>
-      <div className={props.direction}>
+      <div className={props.direction} data-testid="column">
         <Square color="white" />
         <Square color="black" />
         <Square color="white" />
@@ -17,7 +18,7 @@ const Column: React.FC<Props> = (props: Props) => {
         <Square color="white" />
         <Square color="black" />
       </div>
-      <style jsx>{`
+      <style jsx={true}>{`
         .white-first {
           display: flex;
           flex-direction: column

@@ -1,8 +1,8 @@
 import React from "react";
-import { render, screen, fireEvent, getByTestId } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import Square, { Props } from "../../components/Square";
+import Square from "../../components/Square";
 
 describe("<Square />", () => {
   test("should display a square with 50px height and 50px width", async () => {

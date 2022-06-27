@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1656238111313" clover="3.2.0">
-  <project timestamp="1656238111313" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
-    <file name="Square.tsx" path="/Users/mp/Documents/Code/Actual/actual-tt/components/Square.tsx">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="8" count="3" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
-    </file>
+<coverage generated="1656324740018" clover="3.2.0">
+  <project timestamp="1656324740018" name="All files">
+    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="17" coveredelements="17" complexity="0" loc="14" ncloc="14" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Column.tsx" path="/Users/mp/Documents/Code/Actual/actual-tt/components/Column.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+      <file name="Square.tsx" path="/Users/mp/Documents/Code/Actual/actual-tt/components/Square.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="helpers">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="helpers.ts" path="/Users/mp/Documents/Code/Actual/actual-tt/helpers/helpers.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
