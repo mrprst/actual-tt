@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import Square from "../../components/Square";
+import Square from "../../components/Chessboard/Square";
 
 describe("<Square />", () => {
   test("should display a square with 50px height and 50px width", async () => {

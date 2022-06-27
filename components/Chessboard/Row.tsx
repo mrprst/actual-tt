@@ -5,7 +5,7 @@ export type Props = {
   direction: string
 }
 
-const Column: React.FC<Props> = (props: Props) => {
+const Row: React.FC<Props> = (props: Props) => {
   return (
     <>
       <div className={props.direction} data-testid="column">
@@ -21,15 +21,14 @@ const Column: React.FC<Props> = (props: Props) => {
       <style jsx={true}>{`
         .white-first {
           display: flex;
-          flex-direction: column
         }
         .black-first {
           display: flex;
-          flex-direction: column-reverse
+          flex-direction: row-reverse
         }
       `}</style>
     </>
   );
 };
 
-export default Column;
+export default Row;
