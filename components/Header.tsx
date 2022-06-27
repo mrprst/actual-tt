@@ -12,19 +12,17 @@ const Header: React.FC = () => {
       <div className="left">
         <Link href="/">
           <a className="bold" data-active={isActive('/')}>
-            Blog
+            Tous les tests
           </a>
         </Link>
-        <Link href="/drafts">
-          <a data-active={isActive('/drafts')}>Drafts</a>
+        <Link href="/chessboard">
+          <a data-active={isActive('/chessboard')}>Echiquier</a>
         </Link>
-      </div>
-      <div className="right">
-        <Link href="/signup">
-          <a data-active={isActive('/signup')}>Signup</a>
+        <Link href="/fibonacci">
+          <a data-active={isActive('/fibonacci')}>Fibonacci</a>
         </Link>
-        <Link href="/create">
-          <a data-active={isActive('/create')}>+ Create draft</a>
+        <Link href="/modelisation">
+          <a data-active={isActive('/modelisation')}>Modélisation</a>
         </Link>
       </div>
       <style jsx>{`

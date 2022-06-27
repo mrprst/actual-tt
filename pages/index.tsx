@@ -10,7 +10,6 @@ const Tests: React.FC = () => {
           <h2><a href='/chessboard'>ACT-TT1 - Echiquier</a></h2>
           <h2><a href='/fibonacci'>ACT-TT2 - Fibonacci</a></h2>
           <h2><a href='/modelisation'>ACT-TT3 - Modélisation</a></h2>
-          <h2><a href='/tests'>ACT-TT4 - Tests Unitaires</a></h2>
         </div>
       </div>
       <style jsx>{`
