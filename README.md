@@ -17,7 +17,7 @@ I've added a few React hooks to make it interactive
 
 ## N°3 : Make a jobboard modelisation
 For this one I chose to use what I know best in terms of ORM : Prisma.
-It is easy to use, optimised for Typescript and rule with NextJs, a React framework that I like.
+It is easy to use, optimised for Typescript and rule with NextJs, a React framework that I like. If you wish to know how my database is built, just go to `/prisma/schema.prisma`
 
 ## N°4 : Make tests for the 3 exercices
 I used Jest and React Testing Component for this part.
