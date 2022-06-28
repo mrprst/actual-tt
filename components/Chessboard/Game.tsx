@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Row from './Row';
 import Layout from '../Layout'
 import Tile from './Tile'
+import _JSXStyle from 'styled-jsx/style'
 
 let squareBoard: any[] = []
 let mainTiles: string[] = []
@@ -10,9 +11,9 @@ let mainBoard: any[] = []
 mainTiles = ['Rook', 'Knight', 'Bishop', 'King', 'Queen', 'Bishop', 'Knight', 'Rook', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Bishop', 'Knight', 'Rook' ]
 for (let i = 0; i < mainTiles.length; i++) {
   if (i < 16) {
-    mainBoard.push(<Tile value={'black' + mainTiles[i]} key={i} />);
+    mainBoard.push(<Tile value={'black' + mainTiles[i]} key={i} data-testid="tile"/>);
   } else if (i > 46) {
-    mainBoard.push(<Tile value={'white' + mainTiles[i]} key={i} />);
+    mainBoard.push(<Tile value={'white' + mainTiles[i]} key={i} data-testid="tile"/>);
   } else {
     mainBoard.push(<Tile value={''} key={i} />);
   }

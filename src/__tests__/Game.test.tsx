@@ -11,4 +11,10 @@ describe("<Game />", () => {
     expect(squareboard).toHaveClass("board");
   });
 
+  test("should display 64 tiles", async () => {
+    const { container } = render(<Game />);
+    const tiles = container.getElementsByClassName('tile');
+    expect(tiles.length).toBe(64);
+  });
+
 });
