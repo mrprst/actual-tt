@@ -1,12 +1,12 @@
 # Actual Technical Test
 
 ## Launch the project
-&#8594; `git clone https://github.com/mrprst/actual-tt` to get the project
-&#8594; add .env file with database URL in it
-&#8594; `npm i` to install dependencies
-&#8594; `npx prisma generate` to make the link between prisma and .env
-&#8594; `npm run dev` to run it locally
-&#8594; `npm run test:watch` to run the tests
+&#8594; `git clone https://github.com/mrprst/actual-tt` to get the project<br/>
+&#8594; add .env file with database URL in it<br/>
+&#8594; `npm i` to install dependencies<br/>
+&#8594; `npx prisma generate` to make the link between prisma and .env<br/>
+&#8594; `npm run dev` to run it locally<br/>
+&#8594; `npm run test:watch` to run the tests<br/>
 
 ## N°1 : Make a Chessboard in React & Typescript
 I chose to focus on the board itself and not go further with the game logic due to limited time resources. I would have done it differently now that i've finished it. But good exercice !
