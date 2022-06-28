@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 import prisma from "../lib/prisma";
 import { GetServerSideProps } from "next";
-import User, { UserProps } from "../components/User";
-import Announce, { AnnounceProps } from "../components/Announce";
+import User, { UserProps } from "../components/Modelisation/User";
+import Announce, { AnnounceProps } from "../components/Modelisation/Announce";
 import Candidacy, { CandidacyProps } from "../components/Candidacy";
 
 type Props = {

@@ -8,7 +8,7 @@ export type Props = {
 const Row: React.FC<Props> = (props: Props) => {
   return (
     <>
-      <div className={props.direction} data-testid="column">
+      <div className={props.direction} data-testid="row">
         <Square color="white" />
         <Square color="black" />
         <Square color="white" />

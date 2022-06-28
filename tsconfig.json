@@ -26,7 +26,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components", "src/custom.d.ts"
+    "src/components",
+    "src/custom.d.ts",
+    "jest.config.ts"
   ],
   "ts-node": {
     "compilerOptions": {

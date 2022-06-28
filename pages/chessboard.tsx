@@ -3,9 +3,12 @@ import Row from '../components/Chessboard/Row';
 import Layout from '../components/Layout'
 import Tile from '../components/Chessboard/Tile'
 
+let squareBoard: any[] = []
 let mainTiles: string[] = []
 let mainBoard: any[] = []
-mainTiles = ['Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Bishop', 'Knight', 'Rook', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Bishop', 'Knight', 'Rook' ]
+
+
+mainTiles = ['Rook', 'Knight', 'Bishop', 'King', 'Queen', 'Bishop', 'Knight', 'Rook', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Pawn', 'Rook', 'Knight', 'Bishop', 'Queen', 'King', 'Bishop', 'Knight', 'Rook' ]
 for (let i = 0; i < mainTiles.length; i++) {
   if (i < 16) {
     mainBoard.push(<Tile value={'black' + mainTiles[i]} />);
@@ -14,8 +17,16 @@ for (let i = 0; i < mainTiles.length; i++) {
   } else {
     mainBoard.push(<Tile value={''} />);
   }
-
 }
+
+for (let i = 0; i < 8; i++) {
+  if (i % 2 === 0) {
+    squareBoard.push(<Row direction="white-first" />);
+  } else {
+    squareBoard.push(<Row direction="black-first" />);
+  }
+}
+
 
 const Chessboard: React.FC = () => {
 
@@ -23,14 +34,7 @@ const Chessboard: React.FC = () => {
     <Layout>
       <div className='container' >
         <div className='board' data-testid="chessboard">
-          <Row direction="black-first" />
-          <Row direction="white-first" />
-          <Row direction="black-first" />
-          <Row direction="white-first" />
-          <Row direction="black-first" />
-          <Row direction="white-first" />
-          <Row direction="black-first" />
-          <Row direction="white-first" />
+          {squareBoard}
         </div>
 
         <div className='tiles' data-testid="tiles">
@@ -60,6 +64,7 @@ const Chessboard: React.FC = () => {
           display: flex;
           flex-wrap: wrap
         }
+
       `}</style>
     </Layout>
   )
