@@ -9,7 +9,7 @@ const Square: React.FC<Props> = (props: Props) => {
     <>
       <div className={props.color} data-testid="square">
       </div>
-      <style jsx>{`
+      <style jsx={true}>{`
         .white {
           height: 50px;
           width: 50px;

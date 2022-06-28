@@ -25,9 +25,9 @@ const Tile: React.FC<Props> = (props: Props) => {
   return (
     <>
       <div className='tile' data-testid='tile'>
-        <Image loader={() => src} src={src} width={50} height={50} />
+        <Image loader={() => src} src={src} width={50} height={50} unoptimized={true}/>
       </div>
-      <style jsx>{`
+      <style jsx={true}>{`
         .tile {
           height: 50px;
           width: 50px;
