@@ -1,5 +1,4 @@
 import React from "react";
-import _JSXStyle from 'styled-jsx/style'
 
 export type Props = {
   color: string,

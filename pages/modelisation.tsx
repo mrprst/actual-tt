@@ -1,25 +1,19 @@
 import Layout from "../components/Layout";
-import prisma from "../lib/prisma";
 import { GetServerSideProps } from "next";
-import User, { UserProps } from "../components/Modelisation/User";
 import Announce, { AnnounceProps } from "../components/Modelisation/Announce";
-import Candidacy, { CandidacyProps } from "../components/Candidacy";
 
 type Props = {
-  users: UserProps[],
-  candidacies: CandidacyProps[],
-  announces: AnnounceProps[]
-}
+  announces: AnnounceProps[];
+};
 
 const Modelisation: React.FC<Props> = (props) => {
-
   return (
     <Layout>
       <h1>Liste des utilisateurs</h1>
       <div>
         <div>
           {props.announces.map((announce) => (
-            <div key={announce.id} >
+            <div key={announce.id}>
               <Announce announce={announce} />
             </div>
           ))}

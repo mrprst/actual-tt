@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Row from './Row';
-import Layout from '../Layout'
 import Tile from './Tile'
-import _JSXStyle from 'styled-jsx/style'
 
 let squareBoard: any[] = []
 let mainTiles: string[] = []
